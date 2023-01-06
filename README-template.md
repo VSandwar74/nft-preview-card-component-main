@@ -29,20 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./images/Screenshot%202023-01-06%20at%201.13.18%20AM.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My GitHub](https://github.com/VSandwar74/nft-preview-card-component-main)
+- Live Site URL: [My Live Site!](https://your-live-site-url.com)
 
 ## My process
 
@@ -52,10 +44,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
@@ -65,17 +53,42 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.overlay {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+} 
+.green {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #15F7F3;
+    opacity: 0.5;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.eye {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+}
+.nftpic {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 1;
+    display: block;
+}
+.overlay:hover {
+    opacity: 1;
 }
 ```
 
@@ -91,14 +104,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Position Absolute Guide](https://www.geeksforgeeks.org/how-to-stack-elements-in-css/) - This really helped me tackle the overlay task, I think I never fully grasped absolute.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Vishakh Sandwar](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
